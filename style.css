@@ -16,6 +16,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100vw;
     font-family: 'Poppins', sans-serif;
     background-image: url('Icons/defaultBackground.jpeg');
     background-size: cover;
@@ -30,7 +31,7 @@ body{
     background: rgba(0, 0, 0, 0.804);
     padding: 2em;
     border-radius: 3em;
-    height: auto;
+    min-height: auto; /*kk*/
     min-width: 25vw;
     color: white;
     display: flex;
@@ -42,7 +43,7 @@ body{
 
 .search{
     /* background-color: red; */
-    min-height: 10vh;
+    height: 10vh;
     min-width: 25vw;
     display: flex;
     align-items: center;
@@ -51,7 +52,7 @@ body{
 }
 
 .search-bar{
-    min-height: 5vh;
+    height: 50%;
     min-width: 15vw;
     border: none;
     padding-inline: 1em;
@@ -59,7 +60,7 @@ body{
     outline: none;
     background-color: rgb(107, 107, 107);
     color: white;
-    font-size: 1em;
+    font-size: calc(1vh + 1vw);
 }
 
 #btn{
@@ -175,5 +176,4 @@ body{
     justify-content:right;
     font-size: 1.3em;
 }
-
 
