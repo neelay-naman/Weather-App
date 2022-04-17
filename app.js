@@ -90,7 +90,7 @@ showWeather = (data) => {
 
     bodyEle.style.backgroundImage = `url('https://source.unsplash.com/random/${window.innerWidth}x${window.innerHeight+100}/?${cityName}')`;
     iconEle.src = "http://openweathermap.org/img/wn/" + icon + ".png"
-    cityEle.innerText = `${cityName}, ${data.sys.country}`;
+    cityEle.innerHTML = `${cityName},<br> ${data.sys.country}`;
     tempEle.innerText = temperature + "°C";
     minTempEle.innerHTML = `Min: ${minTemp}°C`;
     maxTempEle.innerText = `Max: ${maxTemp}°C`;
