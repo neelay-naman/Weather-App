@@ -88,7 +88,7 @@ showWeather = (data) => {
     const maxTemp = data.main.temp_max;
     console.log(data);
 
-    bodyEle.style.backgroundImage = `url('https://source.unsplash.com/random/${window.innerWidth}x${window.innerHeight}/?${cityName}')`;
+    bodyEle.style.backgroundImage = `url('https://source.unsplash.com/random/${window.innerWidth}x${window.innerHeight+100}/?${cityName}')`;
     iconEle.src = "http://openweathermap.org/img/wn/" + icon + ".png"
     cityEle.innerText = `${cityName}, ${data.sys.country}`;
     tempEle.innerText = temperature + "°C";
