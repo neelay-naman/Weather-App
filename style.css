@@ -126,7 +126,7 @@ body{
 
 .temp{
     text-align: center;
-    font-size: 3em;
+    font-size: 3rem;
     font-weight: 500;
 }
 
@@ -176,4 +176,5 @@ body{
     justify-content:right;
     font-size: 1.3em;
 }
+
 
