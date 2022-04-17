@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;250&family=Poppins:wght@250&display=swap');
+
+*{
+    padding: 0;margin: 0;
+}
+
+html{
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+body{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('Icons/defaultBackground.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    background-color: rgb(173, 191, 200);
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.card{
+    background: rgba(0, 0, 0, 0.804);
+    padding: 2em;
+    border-radius: 3em;
+    height: auto;
+    min-width: 25vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 1em 1em 1em 0 rgba(0, 0, 0, 0.675); 
+}
+
+.search{
+    /* background-color: red; */
+    min-height: 10vh;
+    min-width: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-bottom: 1em;
+}
+
+.search-bar{
+    min-height: 5vh;
+    min-width: 15vw;
+    border: none;
+    padding-inline: 1em;
+    border-radius: 2em;
+    outline: none;
+    background-color: rgb(107, 107, 107);
+    color: white;
+    font-size: 1em;
+}
+
+#btn{
+    margin: 1em;
+    height: 2.5em;
+    min-width: 2.5em;
+    border-radius: 50%;
+    border:none;
+    outline: none;
+    background-color: rgb(107, 107, 107);
+    cursor: pointer;
+    
+}
+
+#btn:hover{
+    background-color: #cdcdcdd0;
+}
+
+#imgIcon{
+    width: 1em;
+}
+
+#locate{
+    height: 2.5em;
+    min-width: 2.5em;
+    border-radius: 50%;
+    border:none;
+    outline: none;
+    background-color: rgb(107, 107, 107);
+    cursor: pointer;
+}
+#locateIcon{
+    width: 1.5em;
+}
+
+#locate:hover{
+    background-color: #cdcdcdd0;
+}
+
+::placeholder{
+    color: white;
+}
+
+.weather{
+    position:relative;
+    display: flex;
+    min-width: 100%;
+    flex-direction: column;
+    height: auto;
+    justify-content:flex-start;
+}
+
+.box1{
+    display: flex;
+    height: 10vh;
+    min-width: 25vw;
+    align-items: center;
+}
+
+.icon{
+    height: 4.5em;
+}
+
+.temp{
+    text-align: center;
+    font-size: 3em;
+    font-weight: 500;
+}
+
+.box2{
+    position: relative;
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content:center;
+}
+
+.minTemp, .maxTemp{
+    font-weight: 400;
+}
+
+.city{
+    font-size: 3.5em;
+    min-width: 100%;
+}
+
+.weatherData{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 15vh;
+    justify-content: center;
+    margin-block: 1em;
+    font-size: 1.2em;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.description{
+    text-transform: capitalize;
+}
+
+.humidity{
+    margin-block: 0.5em;
+}
+
+.dateTime{
+    /* background-color: red;    */
+    min-width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content:right;
+    font-size: 1.3em;
+}
+
+
